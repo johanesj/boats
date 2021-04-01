@@ -1,0 +1,23 @@
+<div class="row resource-info">
+    $(if) $(square_image_url1) $(then)
+        <div class="col-sm-5 resource-image">
+           <img src='$(large_image_url)' class='img-responsive' />
+        </div>
+    $(endif)
+    <div class="$(if) $(square_image_url1) $(then) col-sm-7 $(else) col-sm-12 $(endif) resource-contents">
+        <h2 class='resouce-name h2 text-left'>$(name)</h2>
+        $(if) $(is_upcoming_availability) $(then) $(else)<div class="search-price text-right"><h2> $(price)</h2></div>$(endif)
+        <div class="col-xs-12 col-12 time-ranges">$(available_time_ranges)</div>
+         $(if) $(desc)
+         $(then)
+            <div class='col-xs-12 col-12 resource-description'>$(nobr:$(desc500))</div>
+        $(endif)
+        <div class="col-xs-12 col-12 custom_properties">
+            $(resource_property_list)
+        </div>
+        <div class='action-buttons'  >
+            <a class='btn btn-primary' role='button' href='$(url)'>$(S_DETAILS)</a>
+            <a class='btn btn-primary' role='button' href='$(reserve_url)'>$(reserve_text)</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.planyo {
+    #searchview-code {
+        .search-result-container {
+            .resouce-name {
+                font-family: $heading-font !important;
+            }
+            .btn.btn-primary {
+                @include styledButton();
+            }
+            .result_range a {
+                // background-color: $light-bg !important;
+                // color: $light-bg-font-color !important;
+                @include styledButton();
+            }
+            @media (max-width: 767px) {
+                .resource-image {
+                    padding-right: 15px !important;
+                    padding-left: 15px !important;
+                    margin-bottom: 15px;
+                }
+                .resource-description {
+                    margin: 0;
+                    padding-bottom: 0;
+                }
+                .action-buttons {
+                    display: grid;
+                    column-gap: 15px;
+                    grid-auto-columns: 1fr;
+                    grid-auto-flow: column;
+                    width: 100%;
+                    padding: 0;
+                    @media (max-width: 340px) {
+                        grid-auto-flow: row;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #no-search-results {
+        .bg-danger {
+            background: $danger !important;
+            border-color: $danger !important;
+            color: white !important;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 12px 24px;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+#reserve_form {
+    margin-top: 0;
+}
+.wi-reservation-form {
+    textarea,
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    input[type="text"],
+    select {
+        html .planyo & {
+            font-family: $input-font;
+            font-size: 15px;
+            border-radius: 0;
+            padding: 6px 16px;
+            min-height: 47px;
+            &.with-status-border-error {
+                border-color: $danger;
+            }
+        }
+    }
+    .planyo & .input-group-addon {
+        border-radius: 0;
+    }
+
+    .poweredby {
+        display: none;
+    }
+
+    &__outer-row {
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+        }
+    }
+    &__form-col {
+        flex: 0 1 58%;
+    }
+    #reserve_form {
+        label {
+            color: #000;
+            font-size: $defaultFontSize !important;
+            line-height: $defaultLineHeight !important;
+        }
+    }
+    #planyo_price_holder {
+        font-size: 15px;
+        #pr_err,
+        .rate_err,
+        .rate_extra {
+            font-size: 15px;
+            color: $light-bg-font-color !important;
+        }
+    }
+    #price_info_div_sticky {
+        #nobreakdown,
+        #price_info {
+            color: $light-bg-font-color;
+            font-size: 15px;
+            font-family: $default-font !important;
+        }
+        #br_expand,
+        #br_collapse {
+            text-decoration: underline;
+            color: $light-bg-font-color;
+            font-size: 15px;
+            font-family: $default-font !important;
+        }
+        .dl-horizontal dd {
+            color: $light-bg-font-color;
+            font-size: 15px;
+            font-family: $default-font !important;
+        }
+    }
+    &__price-col {
+        flex: 1 1 42%;
+        padding-left: 15px;
+
+        .nonfloating_text {
+            background-color: $light-bg;
+
+            .title {
+                font-size: 15px;
+                font-family: $default-font !important;
+            }
+            #nobreakdown,
+            #price_info {
+                font-size: 15px;
+                color: $light-bg-font-color;
+            }
+            .dl-horizontal {
+                dt {
+                    color: $light-bg-font-color;
+                    font-size: 15px;
+                }
+                dd {
+                    color: $light-bg-font-color;
+                    font-size: 15px;
+                    font-family: $default-font !important;
+                }
+            }
+        }
+        #br_expand,
+        #br_collapse {
+            text-decoration: underline;
+            font-size: 15px;
+            color: $light-bg-font-color;
+            font-family: $default-font !important;
+        }
+    }
+
+    // html .planyo & {
+    //     input[type="text"],
+    //     input[type="password"],
+    //     input[type="email"],
+    //     input[type="number"],
+    //     input[type="phone"] {
+    //         border-radius: 0;
+    //         font: normal normal normal 20px/1.4em futura-lt-w01-light,sans-serif;
+    //         -webkit-appearance: none;
+    //         -moz-appearance: none;
+    //         border-width: 0 0 1px 0;
+    //         background-color: $dark;
+    //         box-sizing: border-box !important;
+    //         color: #FFFFFF;
+    //         border-style: solid;
+    //         border-color: rgba(255, 255, 255, 1);
+    //         padding: 3px 12px;
+    //         margin: 0;
+    //         max-width: 100%;
+    //         flex: 1;
+    //         text-overflow: ellipsis;
+    //         line-height: 28px;
+    //         height: 42px !important;
+    //     }
+
+    //     select {
+    //         border-radius: 0;
+    //         font: normal normal normal 20px/1.4em futura-lt-w01-light,sans-serif;
+    //         -webkit-appearance: none;
+    //         -moz-appearance: none;
+    //         border-width: 0 0 1px 0;
+    //         background-color: $dark;
+    //         box-sizing: border-box !important;
+    //         color: #FFFFFF;
+    //         border-style: solid;
+    //         border-color: rgba(255, 255, 255, 1);
+    //         padding: 3px 12px;
+    //         margin: 0;
+    //         max-width: 100%;
+    //         flex: 1;
+    //         text-overflow: ellipsis;
+    //         line-height: 28px;
+    //         height: 42px !important;
+    //     }
+
+    //     textarea {
+    //         font-size: 20px;
+    //         line-height: 1.67em;
+    //     }
+
+    //     .checkbox {
+    //         label {
+    //             color: white !important;
+    //             padding-left: 25px;
+    //             font-size: 20px !important;
+    //         }
+    //         input {
+    //             margin: 9px 0 0 -25px;
+    //         }
+    //     }
+    // }
+    #row_rental_prop_Add_Business_Address {
+        width: 100% !important;
+    }
+    &__title {
+        font-family: $heading-font !important;
+        font-weight: 500 !important;
+    }
+    &#products-code,
+    &#reservation-code {
+        h3 {
+            font-family: $heading-font;
+            font-size: $defaultFontSize;
+            font-weight: 500;
+            padding: 0 0 5px 0;
+        }
+        #reservation_details h3 {
+            padding-top: 0;
+        }
+
+        .btn-primary {
+            @include styledButton();
+        }
+    }
+    .pricebox {
+        color: $light-bg-font-color;
+        padding-top: 0;
+        @media (min-width: 768px) {
+            padding-bottom: 50px;
+        }
+        #price_info {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: stretch;
+            padding-top: 5px;
+            > img {
+                max-width: 16px !important;
+                margin: 0 auto !important;
+            }
+            .your_rate_custom {
+                margin-bottom: -10px;
+            }
+            &,
+            .price_info,
+            .rate_err {
+                color: $light-bg-font-color;
+            }
+        }
+
+        #breakdown {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            > dt {
+                flex-basis: 75%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                width: auto;
+                float: none;
+                white-space: normal;
+                text-overflow: initial;
+            }
+
+            > dd {
+                flex-basis: 25%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                text-align: right;
+            }
+        }
+
+        #nobreakdown,
+        #br_collapse,
+        #br_expand {
+            display: none !important;
+        }
+    }
+    #res_error_msg {
+        background: $danger !important;
+        border-color: $danger !important;
+        font-weight: 800;
+        font-size: 15px;
+    }
+}
+#price_info_area {
+    max-width: 100%;
+    width: 100%;
+}

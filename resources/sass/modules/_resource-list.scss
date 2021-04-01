@@ -1,0 +1,136 @@
+.planyo .custom_properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    @media (max-width: 991px) {
+        align-items: stretch;
+    }
+}
+
+.resource-contents {
+    .resource-description {
+        font-size: $defaultFontSize;
+        line-height: $defaultLineHeight;
+    }
+}
+
+
+// .custom_property {
+//     .icon_for_price_range + span {
+//         table {
+//             tr {
+//                 td {
+//                     text-align: right;
+//                     vertical-align: top;
+//                     font-size: $defaultFontSize !important;
+//                     line-height: $defaultLineHeight !important;
+
+//                     &:first-child {
+//                         text-align: left;
+//                         padding-right: 40px;
+//                         @media (max-width: 767px) {
+//                             padding-right: 10px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.planyo #resources {
+    .planyo_cart_widget {
+        display: block;
+        margin-left: auto;
+        width: 40px;
+        float: none;
+    }
+}
+
+.wi-resource-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 40px;
+
+    .resouce-name a {
+        font-size: $titleFontSize;
+        line-height: $titleLineHeight;
+        color: #000;
+    }
+
+    #resources & .custom_property {
+        margin: 0 5px 10px 5px;
+        overflow-x: auto;
+
+        font-size: 0;
+        line-height: 0;
+
+        > span {
+            font-size: $defaultFontSize !important;
+            line-height: $defaultLineHeight !important;
+        }
+        .mdi {
+            &:before {
+                font-size: $defaultFontSize !important;
+                line-height: $defaultLineHeight !important;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__img-container {
+        flex: 1 1 40%;
+        padding-right: 15px;
+
+        @media (max-width: 767px) {
+            flex: 1 1 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+
+        @media (max-width: 767px) {
+            min-height: 200px;
+        }
+    }
+
+    &__content {
+        flex: 1 1 60%;
+    }
+
+    .btn-primary {
+        @include styledButton();
+        @media (max-width: 767px) {
+            display: block !important;
+            margin-bottom: 10px !important;
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        .action-buttons {
+            display: block !important;
+            width: 100%;
+        }
+    }
+}
+
+
+html .planyo {
+    .cart_count_text {
+        line-height: 15px;
+    }
+}

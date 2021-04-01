@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div id="reservation-code" class="wi-reservation-form">
+        $(if) $(current_device) equals mobile
+        $(then)
+        $(else)
+            <p>$(reservation_steps)</p>
+        $(endif)
+        <div class="row" style="margin-top: 40px;padding:0;">
+            <div class="col-md-8">$(reservation_form)</div>
+            $(if) $(current_device) equals mobile
+            $(then)
+                $(your_rate_box_sticky)
+            $(else)
+                <div class="col-md-4 pricebox">
+                    $(your_rate_box)
+                </div>
+            $(endif)
+        </div>
+    </div>
+</div>

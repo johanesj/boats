@@ -1,0 +1,11 @@
+.cp_calendar.fc .fc-time-grid-event.ev_av, .cp_calendar.fc .fc-day-grid-event.ev_av {
+    &.ev_past {
+        cursor: default;
+        pointer-events: none;
+
+        &,
+        &:hover {
+            background-color: #bbb !important;
+        }
+    }
+}

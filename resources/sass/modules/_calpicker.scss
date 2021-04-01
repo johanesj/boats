@@ -1,0 +1,40 @@
+.monthly-fluid .cur_month_day_nox,
+.monthly-fluid .cur_month_day_nox:hover,
+#calendarbig .av_box,
+#calendarbig .av_box a,
+#calendarbig .av_box a:hover,
+.calpicker .cur_month_day_nox,
+.calpicker .cur_month_day_nox:hover {
+    background-color: $light-grey !important;
+    color: #fff!important;
+}
+.monthly-fluid td.reserved_nox,
+.calpicker .reserved_nox:hover,
+#calendarbig .unav_box,
+#calendarbig .unav_box a,
+#calendarbig .unav_box a:hover,
+div#legend_unav_txt,
+.calpicker .reserved_nox,
+.calpicker .reserved_nox:hover {
+    background-color: $red !important;
+    color: #fff!important;
+}
+// div#legend_unav_txt {
+//     border: 1px solid #f1f1f1;
+// }
+.calpicker .ext_month_day_nox_r,
+.calpicker .ext_month_day_nox_r:hover,
+.calpicker .ext_month_day_nox,
+.calpicker .ext_month_day_nox:hover {
+    background: #fff!important;
+    color: #fff!important;
+}
+
+.calpicker .cur_month_day_nox.arrival_day {
+    background: $dark-green !important;
+    color: #fff!important;
+}
+.float-calpicker thead th, .calpicker thead th {
+    font-size: 14px !important;
+    color: #000 !important;
+}

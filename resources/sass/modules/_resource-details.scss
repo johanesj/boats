@@ -1,0 +1,172 @@
+.planyo {
+    #resource-details {
+        .resource-details {
+            &__h1 {
+                text-align: left;
+                font-size: $titleFontSize;
+                color: #232628;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-top: 0;
+                margin-top: 0;
+            }
+
+            &__carousel {
+                @media only screen and (min-width: 768px) {
+                    float: left;
+                    max-width: 450px;
+                    margin: 0 15px 10px 0;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    max-width: 600px;
+                    margin: 0 30px 10px 0;
+                }
+            }
+            &__btn {
+                margin-top: 30px;
+                @include styledButton;
+            }
+
+            &__description {
+                padding-top: 0;
+                margin-top: 0;
+                text-align: left;
+                font-size: $defaultFontSize !important;
+                line-height: $defaultLineHeight !important;
+            }
+
+            &__lower-area {
+                padding-bottom: 30px;
+            }
+        }
+
+        .custom_properties {
+            margin: 0 0 10px 0 !important;
+            display: flex !important;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .custom_property {
+            float: none !important;
+            text-align: left!important;
+            font-weight: normal !important;
+            line-height: 0 !important;
+            font-size: 0 !important;
+            color: #000 !important;
+            margin: 0 !important;
+            padding: 7px 0 !important;
+
+            > span {
+                font-size: $defaultFontSize !important;
+                line-height: $defaultLineHeight !important;
+            }
+            .mdi {
+                &:before {
+                    font-size: $defaultFontSize !important;
+                    line-height: $defaultLineHeight !important;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.cp_calendar.fc {
+    .fc-button {
+        @include styledButton();
+    }
+    .fc-custDay-view th.fc-widget-header,
+    td.fc-resource-area.fc-widget-header th.fc-widget-header {
+        color: #000;
+    }
+    .fc-timeline-event {
+        // font-size: $defaultFontSize;
+        // line-height: $defaultLineHeight;
+        &.ev_av {
+            background-color: $primary !important;
+            box-shadow: none !important;
+            box-sizing: border-box;
+            font-size: 12px !important;
+            line-height: 32px !important;
+            padding: 0 !important;
+            text-align: center !important;
+            text-transform: uppercase !important;
+            transition-delay: 0s;
+            transition-duration: 400ms;
+            transition-property: background-color;
+            transition-timing-function: ease;
+            color: $white !important;
+            text-decoration: none !important;
+            border: none !important;
+            border-radius: 5px !important;
+            height: 34px;
+        }
+    }
+    .fc-event .fc-bg {
+        background: none !important;
+        opacity: 1;
+    }
+    .fc-time-grid-event,
+    .fc-day-grid-event {
+        &.ev_av {
+            background-color: $primary !important;
+            box-shadow: none !important;
+            box-sizing: border-box;
+            display: inline-block;
+            font-size: 16px !important;
+            line-height: 24px !important;
+            letter-spacing: 1px !important;
+            padding: 12px !important;
+            text-align: center !important;
+            text-transform: uppercase !important;
+            transition-delay: 0s;
+            transition-duration: 400ms;
+            transition-property: background-color;
+            transition-timing-function: ease;
+            color: $white !important;
+            text-decoration: none !important;
+            border: none !important;
+            border-radius: 5px !important;
+            cursor: pointer;
+
+            &:focus,
+            &:hover {
+                background-color: darken($primary, 15%) !important;
+            }
+        }
+    }
+    .fc-time-grid-event {
+        &.ev_av {
+            font-size: 12px !important;
+            line-height: 16px !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+
+#content-area .cp_calendar table,
+#main-content .cp_calendar table.cart,
+.cp_calendar table.cart {
+    td, th, tr {
+        padding: 0;
+        max-width: initial;
+    }
+}
+
+#content-area .cp_calendar table .fc-widget-content > div {
+    min-height: 90px !important;
+}
+
+#content-area .cp_calendar table .fc-resource-area .fc-cell-content {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    > .fc-cell-text {
+        white-space: normal;
+    }
+}

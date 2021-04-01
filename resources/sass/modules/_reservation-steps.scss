@@ -1,0 +1,47 @@
+.planyo .reservation_steps {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        max-width: 500px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .reservation_step_img {
+            background-color: $primary;
+            .reservation_step_img_text {
+                font-family: $default-font;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                padding: 0;
+            }
+        }
+        .reservation_step_name {
+            color: $dark-bg;
+            font-size: $defaultFontSize;
+            font-family: $default-font;
+        }
+
+        .reservation_step_current {
+            .reservation_step_img {
+                background-color: $dark-bg;
+            }
+        }
+        .reservation_step,
+        .reservation_step_current {
+            flex: 1 1 25%;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 0;
+            max-width: 90px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://mallinson.webintuitive.co.uk/css/app.css">
+<div class="container-fluid">
+    <!--<style type="text/css">#row_start_time{display:none;}</style>-->
+    <div id="reservation-code" class="wi-reservation-form">
+        $(reservation_steps)
+        <h2 class="wi-reservation-form__title">$(resource)</h2>
+        <div class="wi-reservation-form__outer-row">
+            <div class="wi-reservation-form__form-col">$(reservation_form)</div>
+            $(if) $(current_device) equals mobile
+            $(then)
+                $(your_rate_box_sticky)
+            $(else)
+                <div class="wi-reservation-form__price-col pricebox">
+                    $(your_rate_box)
+                </div>
+            $(endif)
+        </div>
+    </div>
+</div>

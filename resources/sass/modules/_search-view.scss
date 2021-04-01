@@ -1,0 +1,154 @@
+.planyo {
+    #searchview-code {
+        margin: 0 15px;
+
+        .search-box {
+            background-color: $white;
+
+            .hide-filters {
+                display: none;
+            }
+
+            .search-filters {
+                height: 0;
+                transform: translateY(-1000px);
+
+                &-toggle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: fit-content;
+                    margin-bottom: 20px !important;
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: 0.4s ease all;
+                    border-radius: 5px;
+                    background-color: $blue;
+
+                    &:hover {
+                        background-color: $dark;
+                    }
+
+                    & span {
+                        font-size: 14px;
+                        padding: 5px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+
+                    & svg {
+                        width: 20px;
+                        margin: 5px;
+                        color: $white;
+                    }
+                }
+            }
+
+            &.expand {
+                .search-filters {
+                    height: auto;
+                    transform: translatey(0);
+                }
+
+                .edit-filters {
+                    display: none;
+                }
+
+                .hide-filters {
+                    display: block;
+                }
+            }
+
+            #availability_form > div:first-child {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+
+            .planyo-form-row-wrapper {
+                margin: 0;
+            }
+
+            .planyo-form-item-group {
+                position: relative;
+                width: 100%;
+                margin: 3px 0;
+                padding: 5px;
+                border: 2px solid #eeeeee;
+                border-radius: 5px;
+
+                @media (max-width: 767px) {
+                    margin: 7px 0 !important;
+                }
+
+                select {
+                    font-size: 16px;
+                    padding-left: 0;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                label {
+                    font-size: 14px;
+                    font-weight: normal;
+                    position: absolute;
+                    top: -13px;
+                    left: 20px;
+                    display: inline;
+                    width: auto !important;
+                    padding: 0 5px;
+                    background-color: white;
+                }
+
+                .checkbox {
+                    margin: 8px;
+                }
+
+                .chk_label {
+                    position: absolute;
+                    top: -25px;
+                    left: 15px;
+                    pointer-events: none;
+
+                    input {
+                        visibility: hidden;
+                        cursor: pointer;
+                        pointer-events: auto;
+
+                        &:after {
+                            font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial, sans-serif;
+                            font-size: 24px;
+                            line-height: .9;
+                            display: block;
+                            visibility: visible;
+                            width: 28px;
+                            height: 28px;
+                            margin-top: 18px;
+                            content: '\2717';
+                            transition: all 0.2s;
+                            text-align: center;
+                            color: red;
+                            border: 2px solid #cccccc;
+                            border-radius: 5px;
+                        }
+
+                        &:checked:after {
+                            content: '\2713';
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

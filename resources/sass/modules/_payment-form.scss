@@ -1,0 +1,71 @@
+.planyo_mode_show_coupons,
+.online_payments {
+    form {
+        .btn {
+            @include styledButton();
+        }
+        > span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 20px;
+
+            @media (max-width: 399px) {
+                flex-wrap: wrap;
+            }
+
+            label {
+                margin: 0 !important;
+                padding-left: 0.5em !important;
+                cursor: pointer;
+            }
+        }
+        #paypal_sandbox_logo {
+            margin-left: 20 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        #paypal_logo {
+            margin-left: 20 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: 399px) {
+                margin-left: 0 !important;
+                flex: 1 0 100%;
+            }
+        }
+        #stripe_checkout_logo {
+            // background-image: url(https://osho.webintuitive.co.uk/img/logo_stripe_combined_black_sm.png) !important;
+            background-image: url(https://osho.webintuitive.co.uk/img/payment-dark.png) !important;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 272.5px !important;
+            height: 100px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+
+
+            @media (max-width: 399px) {
+                flex: 1 0 100%;
+                margin-left: 0 !important;
+                margin-top: 15px !important;
+            }
+        }
+    }
+    #not_valid_without_payment {
+        font-family: 'Lato', sans-serif !important;
+        font-weight: initial;
+    }
+}
+
+.planyo_mode_show_coupons {
+    padding-bottom: 50px;
+
+    > div:first-child {
+        font-size: 18px;
+    }
+}

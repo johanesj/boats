@@ -1,0 +1,1440 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container:before, .container:after {
+  display: table;
+  content: " ";
+}
+.container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid:before, .container-fluid:after {
+  display: table;
+  content: " ";
+}
+.container-fluid:after {
+  clear: both;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+
+.row-no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row-no-gutters [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+.col-xs-1 {
+  width: 8.3333333333%;
+}
+
+.col-xs-2 {
+  width: 16.6666666667%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-4 {
+  width: 33.3333333333%;
+}
+
+.col-xs-5 {
+  width: 41.6666666667%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-7 {
+  width: 58.3333333333%;
+}
+
+.col-xs-8 {
+  width: 66.6666666667%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-10 {
+  width: 83.3333333333%;
+}
+
+.col-xs-11 {
+  width: 91.6666666667%;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-pull-0 {
+  right: auto;
+}
+
+.col-xs-pull-1 {
+  right: 8.3333333333%;
+}
+
+.col-xs-pull-2 {
+  right: 16.6666666667%;
+}
+
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+.col-xs-pull-4 {
+  right: 33.3333333333%;
+}
+
+.col-xs-pull-5 {
+  right: 41.6666666667%;
+}
+
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+.col-xs-pull-7 {
+  right: 58.3333333333%;
+}
+
+.col-xs-pull-8 {
+  right: 66.6666666667%;
+}
+
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+.col-xs-pull-10 {
+  right: 83.3333333333%;
+}
+
+.col-xs-pull-11 {
+  right: 91.6666666667%;
+}
+
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+.col-xs-push-0 {
+  left: auto;
+}
+
+.col-xs-push-1 {
+  left: 8.3333333333%;
+}
+
+.col-xs-push-2 {
+  left: 16.6666666667%;
+}
+
+.col-xs-push-3 {
+  left: 25%;
+}
+
+.col-xs-push-4 {
+  left: 33.3333333333%;
+}
+
+.col-xs-push-5 {
+  left: 41.6666666667%;
+}
+
+.col-xs-push-6 {
+  left: 50%;
+}
+
+.col-xs-push-7 {
+  left: 58.3333333333%;
+}
+
+.col-xs-push-8 {
+  left: 66.6666666667%;
+}
+
+.col-xs-push-9 {
+  left: 75%;
+}
+
+.col-xs-push-10 {
+  left: 83.3333333333%;
+}
+
+.col-xs-push-11 {
+  left: 91.6666666667%;
+}
+
+.col-xs-push-12 {
+  left: 100%;
+}
+
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.3333333333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.6666666667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.3333333333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.6666666667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.3333333333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.6666666667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.3333333333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.6666666667%;
+}
+
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  .col-sm-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  .col-sm-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  .col-sm-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  .col-sm-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  .col-sm-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  .col-sm-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  .col-sm-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  .col-sm-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  .col-sm-push-1 {
+    left: 8.3333333333%;
+  }
+
+  .col-sm-push-2 {
+    left: 16.6666666667%;
+  }
+
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  .col-sm-push-4 {
+    left: 33.3333333333%;
+  }
+
+  .col-sm-push-5 {
+    left: 41.6666666667%;
+  }
+
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  .col-sm-push-7 {
+    left: 58.3333333333%;
+  }
+
+  .col-sm-push-8 {
+    left: 66.6666666667%;
+  }
+
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  .col-sm-push-10 {
+    left: 83.3333333333%;
+  }
+
+  .col-sm-push-11 {
+    left: 91.6666666667%;
+  }
+
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  .col-md-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  .col-md-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  .col-md-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  .col-md-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  .col-md-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  .col-md-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  .col-md-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  .col-md-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  .col-md-push-1 {
+    left: 8.3333333333%;
+  }
+
+  .col-md-push-2 {
+    left: 16.6666666667%;
+  }
+
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  .col-md-push-4 {
+    left: 33.3333333333%;
+  }
+
+  .col-md-push-5 {
+    left: 41.6666666667%;
+  }
+
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  .col-md-push-7 {
+    left: 58.3333333333%;
+  }
+
+  .col-md-push-8 {
+    left: 66.6666666667%;
+  }
+
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  .col-md-push-10 {
+    left: 83.3333333333%;
+  }
+
+  .col-md-push-11 {
+    left: 91.6666666667%;
+  }
+
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  .col-lg-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  .col-lg-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  .col-lg-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  .col-lg-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  .col-lg-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  .col-lg-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  .col-lg-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  .col-lg-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  .col-lg-push-1 {
+    left: 8.3333333333%;
+  }
+
+  .col-lg-push-2 {
+    left: 16.6666666667%;
+  }
+
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  .col-lg-push-4 {
+    left: 33.3333333333%;
+  }
+
+  .col-lg-push-5 {
+    left: 41.6666666667%;
+  }
+
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  .col-lg-push-7 {
+    left: 58.3333333333%;
+  }
+
+  .col-lg-push-8 {
+    left: 66.6666666667%;
+  }
+
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  .col-lg-push-10 {
+    left: 83.3333333333%;
+  }
+
+  .col-lg-push-11 {
+    left: 91.6666666667%;
+  }
+
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+#reserve_form {
+  margin-top: 0;
+}
+
+html .planyo .wi-reservation-form textarea,
+html .planyo .wi-reservation-form input[type=number],
+html .planyo .wi-reservation-form input[type=tel],
+html .planyo .wi-reservation-form input[type=email],
+html .planyo .wi-reservation-form input[type=date],
+html .planyo .wi-reservation-form input[type=password],
+html .planyo .wi-reservation-form input[type=text],
+html .planyo .wi-reservation-form select {
+  font-family: "Fira Sans Condensed", Gil sans;
+  font-size: 15px;
+  border-radius: 0;
+  padding: 6px 16px;
+  min-height: 47px;
+}
+html .planyo .wi-reservation-form textarea.with-status-border-error,
+html .planyo .wi-reservation-form input[type=number].with-status-border-error,
+html .planyo .wi-reservation-form input[type=tel].with-status-border-error,
+html .planyo .wi-reservation-form input[type=email].with-status-border-error,
+html .planyo .wi-reservation-form input[type=date].with-status-border-error,
+html .planyo .wi-reservation-form input[type=password].with-status-border-error,
+html .planyo .wi-reservation-form input[type=text].with-status-border-error,
+html .planyo .wi-reservation-form select.with-status-border-error {
+  border-color: #E04523;
+}
+.planyo .wi-reservation-form .input-group-addon {
+  border-radius: 0;
+}
+.wi-reservation-form .poweredby {
+  display: none;
+}
+@media (min-width: 992px) {
+  .wi-reservation-form__outer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.wi-reservation-form__form-col {
+  flex: 0 1 58%;
+}
+.wi-reservation-form #reserve_form label {
+  color: #000;
+  font-size: 15px !important;
+  line-height: 28.9px !important;
+}
+.wi-reservation-form #planyo_price_holder {
+  font-size: 15px;
+}
+.wi-reservation-form #planyo_price_holder #pr_err,
+.wi-reservation-form #planyo_price_holder .rate_err,
+.wi-reservation-form #planyo_price_holder .rate_extra {
+  font-size: 15px;
+  color: #686755 !important;
+}
+.wi-reservation-form #price_info_div_sticky #nobreakdown,
+.wi-reservation-form #price_info_div_sticky #price_info {
+  color: #686755;
+  font-size: 15px;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form #price_info_div_sticky #br_expand,
+.wi-reservation-form #price_info_div_sticky #br_collapse {
+  text-decoration: underline;
+  color: #686755;
+  font-size: 15px;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form #price_info_div_sticky .dl-horizontal dd {
+  color: #686755;
+  font-size: 15px;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form__price-col {
+  flex: 1 1 42%;
+  padding-left: 15px;
+}
+.wi-reservation-form__price-col .nonfloating_text {
+  background-color: #E5E6D8;
+}
+.wi-reservation-form__price-col .nonfloating_text .title {
+  font-size: 15px;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form__price-col .nonfloating_text #nobreakdown,
+.wi-reservation-form__price-col .nonfloating_text #price_info {
+  font-size: 15px;
+  color: #686755;
+}
+.wi-reservation-form__price-col .nonfloating_text .dl-horizontal dt {
+  color: #686755;
+  font-size: 15px;
+}
+.wi-reservation-form__price-col .nonfloating_text .dl-horizontal dd {
+  color: #686755;
+  font-size: 15px;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form__price-col #br_expand,
+.wi-reservation-form__price-col #br_collapse {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #686755;
+  font-family: "Cabin", Gil sans !important;
+}
+.wi-reservation-form #row_rental_prop_Add_Business_Address {
+  width: 100% !important;
+}
+.wi-reservation-form__title {
+  font-family: "Fira Sans Condensed", Gil sans !important;
+  font-weight: 500 !important;
+}
+.wi-reservation-form#products-code h3, .wi-reservation-form#reservation-code h3 {
+  font-family: "Fira Sans Condensed", Gil sans;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 0 5px 0;
+}
+.wi-reservation-form#products-code #reservation_details h3, .wi-reservation-form#reservation-code #reservation_details h3 {
+  padding-top: 0;
+}
+.wi-reservation-form#products-code .btn-primary, .wi-reservation-form#reservation-code .btn-primary {
+  font-family: "Cabin", Gil sans !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  background-color: #BDBFAC !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 1px !important;
+  padding: 12px 24px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition-delay: 0s;
+  transition-duration: 400ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 3px !important;
+}
+.wi-reservation-form#products-code .btn-primary:focus, .wi-reservation-form#products-code .btn-primary:hover, .wi-reservation-form#reservation-code .btn-primary:focus, .wi-reservation-form#reservation-code .btn-primary:hover {
+  background-color: #676D50 !important;
+  color: #fff !important;
+}
+.wi-reservation-form .pricebox {
+  color: #686755;
+  padding-top: 0;
+}
+@media (min-width: 768px) {
+  .wi-reservation-form .pricebox {
+    padding-bottom: 50px;
+  }
+}
+.wi-reservation-form .pricebox #price_info {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding-top: 5px;
+}
+.wi-reservation-form .pricebox #price_info > img {
+  max-width: 16px !important;
+  margin: 0 auto !important;
+}
+.wi-reservation-form .pricebox #price_info .your_rate_custom {
+  margin-bottom: -10px;
+}
+.wi-reservation-form .pricebox #price_info,
+.wi-reservation-form .pricebox #price_info .price_info,
+.wi-reservation-form .pricebox #price_info .rate_err {
+  color: #686755;
+}
+.wi-reservation-form .pricebox #breakdown {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.wi-reservation-form .pricebox #breakdown > dt {
+  flex-basis: 75%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  float: none;
+  white-space: normal;
+  text-overflow: initial;
+}
+.wi-reservation-form .pricebox #breakdown > dd {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right;
+}
+.wi-reservation-form .pricebox #nobreakdown,
+.wi-reservation-form .pricebox #br_collapse,
+.wi-reservation-form .pricebox #br_expand {
+  display: none !important;
+}
+.wi-reservation-form #res_error_msg {
+  background: #E04523 !important;
+  border-color: #E04523 !important;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+#price_info_area {
+  max-width: 100%;
+  width: 100%;
+}
+
+.planyo .reservation_steps {
+  display: none;
+}
+@media (min-width: 768px) {
+  .planyo .reservation_steps {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .planyo .reservation_steps .reservation_step_img {
+    background-color: #BDBFAC;
+  }
+  .planyo .reservation_steps .reservation_step_img .reservation_step_img_text {
+    font-family: "Cabin", Gil sans;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+  }
+  .planyo .reservation_steps .reservation_step_name {
+    color: #6F6F5D;
+    font-size: 15px;
+    font-family: "Cabin", Gil sans;
+  }
+  .planyo .reservation_steps .reservation_step_current .reservation_step_img {
+    background-color: #6F6F5D;
+  }
+  .planyo .reservation_steps .reservation_step,
+.planyo .reservation_steps .reservation_step_current {
+    flex: 1 1 25%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+    max-width: 90px;
+  }
+}
+
+.monthly-fluid .cur_month_day_nox,
+.monthly-fluid .cur_month_day_nox:hover,
+#calendarbig .av_box,
+#calendarbig .av_box a,
+#calendarbig .av_box a:hover,
+.calpicker .cur_month_day_nox,
+.calpicker .cur_month_day_nox:hover {
+  background-color: #AAABA9 !important;
+  color: #fff !important;
+}
+
+.monthly-fluid td.reserved_nox,
+.calpicker .reserved_nox:hover,
+#calendarbig .unav_box,
+#calendarbig .unav_box a,
+#calendarbig .unav_box a:hover,
+div#legend_unav_txt,
+.calpicker .reserved_nox,
+.calpicker .reserved_nox:hover {
+  background-color: #C86648 !important;
+  color: #fff !important;
+}
+
+.calpicker .ext_month_day_nox_r,
+.calpicker .ext_month_day_nox_r:hover,
+.calpicker .ext_month_day_nox,
+.calpicker .ext_month_day_nox:hover {
+  background: #fff !important;
+  color: #fff !important;
+}
+
+.calpicker .cur_month_day_nox.arrival_day {
+  background: #676D50 !important;
+  color: #fff !important;
+}
+
+.float-calpicker thead th, .calpicker thead th {
+  font-size: 14px !important;
+  color: #000 !important;
+}
+
+.cp_calendar .fc-widget-header .fc-cell-text {
+  font-family: "Fira Sans Condensed", Gil sans;
+  font-size: 15px;
+  font-weight: 800;
+}
+.cp_calendar .fc-widget-header.fc-time-area .fc-cell-content {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.cp_calendar .fc-widget-header.fc-time-area .fc-cell-content .fc-cell-text {
+  padding: 0;
+}
+.cp_calendar .fc-widget-content .fc-cell-text {
+  font-family: "Fira Sans Condensed", Gil sans;
+  font-size: 15px;
+}
+.cp_calendar .fc-button {
+  font-family: "Cabin", Gil sans !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  background-color: #BDBFAC !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 1px !important;
+  padding: 12px 24px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition-delay: 0s;
+  transition-duration: 400ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 3px !important;
+}
+.cp_calendar .fc-button:focus, .cp_calendar .fc-button:hover {
+  background-color: #676D50 !important;
+  color: #fff !important;
+}
+
+.planyo #searchview-code .search-result-container .resouce-name {
+  font-family: "Fira Sans Condensed", Gil sans !important;
+}
+.planyo #searchview-code .search-result-container .btn.btn-primary {
+  font-family: "Cabin", Gil sans !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  background-color: #BDBFAC !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 1px !important;
+  padding: 12px 24px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition-delay: 0s;
+  transition-duration: 400ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 3px !important;
+}
+.planyo #searchview-code .search-result-container .btn.btn-primary:focus, .planyo #searchview-code .search-result-container .btn.btn-primary:hover {
+  background-color: #676D50 !important;
+  color: #fff !important;
+}
+.planyo #searchview-code .search-result-container .result_range a {
+  font-family: "Cabin", Gil sans !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  background-color: #BDBFAC !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 1px !important;
+  padding: 12px 24px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition-delay: 0s;
+  transition-duration: 400ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 3px !important;
+}
+.planyo #searchview-code .search-result-container .result_range a:focus, .planyo #searchview-code .search-result-container .result_range a:hover {
+  background-color: #676D50 !important;
+  color: #fff !important;
+}
+@media (max-width: 767px) {
+  .planyo #searchview-code .search-result-container .resource-image {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-bottom: 15px;
+  }
+  .planyo #searchview-code .search-result-container .resource-description {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .planyo #searchview-code .search-result-container .action-buttons {
+    display: grid;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) and (max-width: 340px) {
+  .planyo #searchview-code .search-result-container .action-buttons {
+    grid-auto-flow: row;
+    row-gap: 10px;
+  }
+}
+.planyo #no-search-results .bg-danger {
+  background: #E04523 !important;
+  border-color: #E04523 !important;
+  color: white !important;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px 24px;
+}
+
+#product-page .product-name,
+#product-page .col-unitprice,
+#product-page .product-price,
+#product-page .col-subtotal,
+.col-qty {
+  color: #676D50 !important;
+}
+
+#product-page .prod_selected .product-name,
+#product-page .prod_selected .col-unitprice,
+#product-page .prod_selected .product-price,
+#product-page .prod_selected .col-subtotal,
+.prod_selected .col-qty {
+  color: #333229 !important;
+}
+
+.planyo .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.planyo .btn-group > .btn:last-child:not(:first-child), .planyo .btn-group > .dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.planyo #product-page .btn-group .btn-primary {
+  padding: 6px 12px !important;
+}
+
+.container#completed_code {
+  margin: 0 auto;
+}
+
+#completed_code,
+#payment_code {
+  font-family: "Cabin", Gil sans;
+}
+#completed_code .rental-id.lead,
+#payment_code .rental-id.lead {
+  margin-bottom: 0;
+  font-family: "Cabin", Gil sans;
+  font-size: 18px;
+  font-weight: 800;
+  color: #676D50;
+}
+
+#completed_code .rental-id.lead {
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+.summary.dl-horizontal.res_details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: row;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 5px;
+}
+.summary.dl-horizontal.res_details > dt {
+  width: auto;
+  float: none;
+  clear: none;
+  overflow: initial;
+  grid-column: 1/2;
+}
+.summary.dl-horizontal.res_details > dd {
+  width: auto;
+  float: none;
+  clear: none;
+  overflow: initial;
+  grid-column: 2/3;
+  color: #676D50;
+}
+.summary.dl-horizontal.res_details > dd a {
+  color: #676D50;
+}
+
+#not_valid_without_payment {
+  font-family: "Fira Sans Condensed", Gil sans;
+  font-size: 18px;
+}
+
+html .planyo {
+  font-family: "Cabin", Gil sans;
+  font-size: 15px;
+  line-height: 28.9px;
+}
